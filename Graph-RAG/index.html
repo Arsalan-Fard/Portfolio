@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graph-RAG for SRS Compliance &mdash; Arsalan</title>
+  <meta name="description" content="A publication on combining Graph-RAG with Chain-of-Thought and Tree-of-Thought prompting for automated SRS traceability and compliance checks." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page project-page">
+    <a class="back-button" href="../index.html#publications" aria-label="Back to Publications">
+      <span class="back-button__arrow" aria-hidden="true">&larr;</span>
+    </a>
+
+    <main>
+      <header class="project-intro">
+        <p class="project-kicker">2024 &middot; Publication &middot; arXiv:2412.08593</p>
+        <h1 class="project-title">Graph-RAG for<br />SRS Compliance</h1>
+        <p class="project-lede">A framework for checking whether Software Requirements Specifications are complete, traceable, and aligned with higher-level standards by combining structured Graph-RAG retrieval with LLM reasoning.</p>
+        <p class="project-authors">Arsalan Masoudifard, Mohammad Mowlavi Sorond, Moein Madadi, Mohammad Sabokrou, and Elahe Habibi</p>
+      </header>
+
+      <figure class="project-figure project-figure--hero">
+        <img src="396803948-e0079fed-b36f-4817-831f-4a8ea2b2416b.png" alt="Graph-RAG workflow from cross-reference documents through graph construction, community summaries, retrieval, and LLM evaluation" width="1872" height="1015" />
+        <figcaption>Cross-reference documents are converted into a searchable knowledge graph, then retrieved context and tailored prompts guide the requirement assessment.</figcaption>
+      </figure>
+
+      <section class="project-summary" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <div class="project-summary__body">
+          <p>This work adapts Microsoft Graph-RAG to retrieve evidence from domain-specific corpora and evaluate an SRS against organizational, regulatory, or technical reference material. Extracted entities and relationships are organized into communities and summarized, giving the language model structured context rather than isolated text passages.</p>
+
+         
+
+          <div class="project-actions">
+            <a class="source-link" href="https://arxiv.org/abs/2412.08593" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">&nearr;</span></a>
+            <a class="source-link" href="https://github.com/Arsalan-Fard/GRAG_LLM_SRS" target="_blank" rel="noopener noreferrer">View code on GitHub <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </section>
+
+    
+    </main>
+
+    <footer class="project-footer">
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

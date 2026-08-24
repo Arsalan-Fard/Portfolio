@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Co-Citation Visualization &mdash; Arsalan</title>
+  <meta name="description" content="An interactive D3.js tool for exploratory literature search through co-citation, bibliographic coupling, citation flow, and coordinated recommendations." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page project-page">
+    <a class="back-button" href="../index.html" aria-label="Back to Index of work">
+      <span class="back-button__arrow" aria-hidden="true">&larr;</span>
+    </a>
+
+    <main>
+      <header class="project-intro">
+        <p class="project-kicker">2025 &middot; Information visualization</p>
+        <h1 class="project-title">Co-Citation<br />Visualization</h1>
+        <p class="project-lede">An exploratory and interactive literature review system revealing shared foundations, topic bridges, citation flows, and which papers may be worth reading next. Using the OpenAlex categorization we can see what school of thoughts a paper is used in their references and what type of papers are citing them, represeting the flow of knowledge in the sankey diagram.</p>
+      </header>
+
+      <figure class="project-figure project-figure--hero">
+        <img src="546653048-1ab09ee1-f453-43fa-9c39-141828956973.png" alt="Co-citation visualization dashboard with layout controls, network graph, Sankey diagram, recommendation heatmap, and paper hierarchy" width="1910" height="906" />
+        <figcaption>Multiple coordinated views keep network structure, citation flow, recommendations, and field coverage connected.</figcaption>
+      </figure>
+
+      <section class="project-summary" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <div class="project-summary__body">
+          <p>The project begins with 59 papers collected for research on public participatory design. A reproducible Python pipeline resolves their DOIs through OpenAlex, gathers metadata and references, then derives weighted co-citation and bibliographic-coupling graphs for the browser application.</p>
+          <p>Then the D3.js interface will present a scatterplot as a force-directed network. A stability control continuously blends those layouts, allowing users to expose clusters without losing the meaning of axes such as publication date, citation count, field-weighted impact, or research field.</p>
+          <p>Selection is coordinated across the network, a Sankey view of cited and citing fields, a heatmap that ranks unread papers against the user&rsquo;s reading history, and a radial hierarchy of domain, field, and subfield. Together, the views support exploratory search rather than presenting another flat bibliography.</p>
+
+
+
+          <a class="source-link" href="https://github.com/Arsalan-Fard/Co-Citation-Visualization" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&nearr;</span></a>
+        </div>
+      </section>
+
+      <section class="relationship-types" aria-labelledby="relationships-title">
+        <div class="relationship-types__heading">
+          <p>Network logic</p>
+          <h2 id="relationships-title">Two complementary views of related work</h2>
+        </div>
+        <div class="relationship-types__grid">
+          <article>
+            <span>01</span>
+            <h3>Co-citation</h3>
+            <p>Two papers are linked when later publications cite them together, revealing how a research community groups earlier work over time.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Bibliographic coupling</h3>
+            <p>Two papers are linked when they share references, revealing common intellectual foundations at the time they were published.</p>
+          </article>
+        </div>
+      </section>
+
+      <figure class="project-figure project-figure--secondary">
+        <img src="546653014-5279d097-c2bb-4fa6-befa-8c0a82e758de.png" alt="Dense co-citation network beside recommended-paper controls and a radial hierarchy of research fields" loading="lazy" width="1892" height="886" />
+        <figcaption>The force-directed view makes clusters and bridge papers visible while linked panels preserve recommendation and topical context.</figcaption>
+      </figure>
+    </main>
+
+    <footer class="project-footer">
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

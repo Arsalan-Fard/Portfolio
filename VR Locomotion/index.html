@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Broom VR Locomotion &mdash; Arsalan</title>
+  <meta name="description"
+    content="An embodied VR flying-locomotion prototype combining leaning and controller input, documented and evaluated for a mixed-reality HCI course." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page project-page">
+    <a class="back-button" href="../index.html#projects" aria-label="Back to Projects">
+      <span class="back-button__arrow" aria-hidden="true">&larr;</span>
+    </a>
+
+    <main>
+      <header class="project-intro">
+        <p class="project-kicker">2026 &middot; Mixed reality &middot; Human&ndash;computer interaction</p>
+        <h1 class="project-title">Magic Broom<br />VR Locomotion</h1>
+        <p class="project-lede">A locmotion technique in VR that maps a rider&rsquo;s leaning posture and controller
+          input to the movement of a virtual broom&mdash;designed, implemented, and evaluated as part of the
+          Human&ndash;Computer Interaction for Mixed Reality course at T&eacute;l&eacute;com Paris.</p>
+        <p class="project-authors">Created with Soheil Lotfi</p>
+      </header>
+
+      <figure class="project-figure project-figure--hero">
+        <video src="broom-demo.mp4" poster="broom-demo-poster.jpg"
+          width="800" height="450" autoplay muted loop playsinline preload="metadata"
+          aria-label="Split-screen Magic Broom demonstration showing the VR flying course and a seated participant steering by leaning"></video>
+        <figcaption>The virtual flight and the participant&rsquo;s physical movement are shown together during the
+          prototype demonstration.</figcaption>
+      </figure>
+
+      <figure class="project-figure project-figure--props">
+        <div class="prop-pair">
+          <img src="broom-prop.png"
+            alt="The physical broom prop: an MDF board with a rounded head and a two-piece handle" loading="lazy"
+            width="672" height="1075" />
+          <img src="broom-mount.png" alt="Close-up of the mount on the broom shaft, held by screws and two cable ties"
+            loading="lazy" width="964" height="865" />
+        </div>
+        <figcaption>The MDF frame: (left) Seating place for the participant which would be on the chair (right) tip of
+          the physical broom for mountring the controller .</figcaption>
+      </figure>
+
+      <section class="project-summary" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <div class="project-summary__body">
+          <p>Acceleration is done by leaning toward the tip of the broom, a controller button adds a smaller boost if needed, and calibration maps the physical broom and
+            controllers into the virtual vehicle. Vertical steering happens through rotating the controller at the tip of the broom.</p>
+          <p>The work was evaluated with seven participants through guided setup, exploration, a complete race, the
+            Igroup Presence Questionnaire, the Simulator Sickness Questionnaire, and a short interview. Participants
+            reported strong involvement and spatial presence, while the results also exposed moderate cybersickness.</p>
+          <p>An accompanying web experience documents the full course process.</p>
+
+          <dl class="project-facts">
+            <div>
+              <dt>Prototype</dt>
+              <dd>Unity VR</dd>
+            </div>
+            <div>
+              <dt>Interaction</dt>
+              <dd>Lean + controller</dd>
+            </div>
+            <div>
+              <dt>Evaluation</dt>
+              <dd>7 participants</dd>
+            </div>
+          </dl>
+
+          <div class="project-actions">
+            <a class="source-link" href="https://arsalan-fard.github.io/Soheil-Arsalan_MR/" target="_blank"
+              rel="noopener noreferrer">Explore the course journal <span aria-hidden="true">&nearr;</span></a>
+            <a class="source-link" href="https://github.com/Arsalan-Fard/Soheil-Arsalan_MR" target="_blank"
+              rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer class="project-footer">
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yu-Gi-Oh &mdash; Arsalan</title>
+  <meta name="description" content="A JavaFX client-server card game built as a first-year bachelor project at Sharif University of Technology." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page project-page">
+    <a class="back-button" href="../index.html" aria-label="Back to Index of work">
+      <span class="back-button__arrow" aria-hidden="true">&larr;</span>
+    </a>
+
+    <main>
+      <header class="project-intro">
+        <p class="project-kicker">2021 &middot; First-year bachelor project</p>
+        <h1 class="project-title">Yu-Gi-Oh</h1>
+        <p class="project-lede">Developing Yu-Gi-Oh (a famous card game) with Java and JavaFX during my first year at Sharif University of Technology. It covers Object Oriented Programming (OOP) and networking concepts for multiplayer gameplay.</p>
+
+      </header>
+
+      <figure class="project-figure project-figure--hero">
+        <img src="2.png" alt="Yu-Gi-Oh duel board showing a match against the AI" width="1267" height="707" />
+        <figcaption>Turn-based duel interface with hand, field, phases, life points, and an AI opponent.</figcaption>
+                  <a class="source-link" href="https://github.com/Advanced-Programming-2021/project-team-33" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&nearr;</span></a>
+
+      </figure>
+
+      <section class="project-components" aria-labelledby="components-title">
+        <header class="project-components__heading">
+          <p>Architecture</p>
+          <h2 id="components-title">Project components</h2>
+        </header>
+
+        <div class="component-grid">
+          <article class="component">
+            <span aria-hidden="true">01</span>
+            <h3>OOP</h3>
+            <p>Cards, players, decks, boards, phases, and effects are represented as reusable domain classes and enums.</p>
+          </article>
+          <article class="component">
+            <span aria-hidden="true">02</span>
+            <h3>MVC-style structure</h3>
+            <p>Models store game state, JavaFX views render each screen, and controllers coordinate rules and menu workflows.</p>
+          </article>
+          <article class="component">
+            <span aria-hidden="true">03</span>
+            <h3>JavaFX interface</h3>
+            <p>FXML scenes cover registration, deck building, the card shop, and the turn-based duel board.</p>
+          </article>
+          <article class="component">
+            <span aria-hidden="true">04</span>
+            <h3>Client &amp; server</h3>
+            <p>A TCP protocol connects the desktop client to a Java server for accounts and multiplayer state, while AI duels run locally.</p>
+          </article>
+        </div>
+      </section>
+
+    
+
+      <figure class="project-figure project-figure--secondary">
+        <img src="1.png" alt="Yu-Gi-Oh card shop interface with purchasable cards" loading="lazy" width="1272" height="705" />
+        <figcaption>The card shop connects collection-building to deck construction and play.</figcaption>
+      </figure>
+    </main>
+
+    <footer class="project-footer">
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

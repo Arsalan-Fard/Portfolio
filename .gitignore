@@ -1,0 +1,13 @@
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Nothing here is built or installed — this is a static site.
+# Source code for the case studies lives in its own repo, linked
+# from each project page. Do not vendor those clones back in here.
+node_modules/

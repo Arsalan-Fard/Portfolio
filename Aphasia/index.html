@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aphasia Transcription &mdash; Arsalan</title>
+  <meta name="description" content="Research on ASR accuracy, critical mistranscriptions, hallucinations, and CHAT-format analysis for aphasic speech." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page project-page">
+    <a class="back-button" href="../index.html" aria-label="Back to index of work">
+      <span class="back-button__arrow" aria-hidden="true">&larr;</span>
+    </a>
+
+    <main>
+      <header class="project-intro">
+        <p class="project-kicker">2024 &middot; Automatic Speech Recognition</p>
+        <h1 class="project-title">Aphasia<br />Transcription</h1>
+        <p class="project-lede">An experimental study of how speech-recognition systems (mainly Whisper) fail on aphasic speech&mdash;and whether fine-tuning, decoding choices, phoneme evidence, and integrating LLM analysis can produce more accurate transcripts.</p>
+      </header>
+
+      <figure class="project-figure project-figure--hero">
+        <img src="447314947-5bf6c34a-e2f3-4aad-94c4-6ced18934ef1.png" alt="Aphasia transcription demo showing an audio waveform, raw transcript, and analyzed transcript with highlighted annotations" width="1095" height="868" />
+        <figcaption>The working demo synchronizes audio with a raw transcript and a structured, annotated analysis.</figcaption>
+      </figure>
+
+      <section class="project-summary" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <div class="project-summary__body">
+          <p>In this project we first benchmarks six ASR models including Whisper Base, Whisper Large-v3, configured Faster Whisper, a fine-tuned Whisper model, AssemblyAI, and Gemini 2.5 Pro across six aphasic speech recordings. Evaluation separates aphasic participant speech from interviewer speech and compares word error rate alongside substitutions, deletions, and insertions.</p>
+          <p>In the second part, we propose a pipeline in wich we a recording goes through a Faster whisper and a Wav2Vec phoneme model in parallel, then fed to Gemini 2.5 Pro by providing useful metadata to decide which parts should be corrected.</p>
+          <p>The final part explores a speech-analysis assistant that converts transcripts into TalkBank CHAT notation, including filled pauses, repetition and retracing, grammar markers, and word corrections. The experiments show why LLM post-processing should be limited to flagged spans as rewriting an entire transcript introduces too many false positives.</p>
+
+          <a class="source-link" href="https://github.com/Arsalan-Fard/Aphasia-Transcription" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&nearr;</span></a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="project-footer">
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

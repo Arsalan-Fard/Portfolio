@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arsalan — Index of Work</title>
+  <meta name="description" content="Selected work. An index of projects, most recent first." />
+
+  <!-- Fonts: one family throughout — Fraunces, from display sizes down to the small caps labels. Degrades gracefully offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- thin hairline that fills as you scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page">
+    <!-- ───────────────  MASTHEAD  ─────────────── -->
+    <!-- EDIT: your name + one-line description live here. -->
+    <header class="masthead">
+      <div class="masthead__id">
+        <h1 class="masthead__name">Arsalan</h1>
+        <p class="masthead__bio">Second-year master&rsquo;s student in Human-Computer Interaction at Institut Polytechnique de Paris.</p>
+      </div>
+
+      <div class="masthead__meta">
+        <nav class="links" aria-label="Profiles">
+          <a href="https://github.com/Arsalan-Fard" target="_blank" rel="noopener noreferrer">GitHub<span class="links__arrow" aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/arsalan-masoudifard/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="links__arrow" aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=Kw-3QMoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar<span class="links__arrow" aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="work-tabs" aria-label="Portfolio sections">
+      <div class="work-tabs__rail" role="tablist" aria-label="Work type">
+        <button class="work-tab" id="tab-projects" type="button" role="tab" aria-selected="true" aria-controls="panel-projects" tabindex="0" data-tab="projects">
+          <span>Projects</span><span class="work-tab__count">05</span>
+        </button>
+        <button class="work-tab" id="tab-publications" type="button" role="tab" aria-selected="false" aria-controls="panel-publications" tabindex="-1" data-tab="publications">
+          <span>Publications</span><span class="work-tab__count">02</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ───────────────  INDEX OF WORK  ─────────────── -->
+    <main class="index">
+      <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" data-tab-panel="projects">
+        <ol class="works">
+
+        <!-- 01 -->
+        <li class="work is-hidden" style="--i:0">
+          <a class="work__link" href="Quant UX/index.html">
+            <span class="work__thumb work__thumb--contain work__thumb--paper">
+              <img src="Quant UX/image-10-1536x543.png" alt="Five dark patterns tested in the Temu quantitative UX study" loading="eager" width="1536" height="543" />
+            </span>
+            <span class="work__body">
+              <h2 class="work__title">Evaluating Dark Patterns on Temu</h2>
+              <span class="work__meta">2026 &middot; Quantitative UX Research</span>
+              <p class="work__desc">A controlled study of how visible and subtle dark patterns affect attention, perceived manipulation, and purchasing behavior.</p>
+            </span>
+            <span class="work__year" aria-hidden="true">&rsquo;26<span class="work__arrow">&nearr;</span></span>
+          </a>
+        </li>
+
+        <!-- 02 -->
+        <li class="work is-hidden" style="--i:1">
+          <a class="work__link" href="VR Locomotion/index.html">
+            <span class="work__thumb">
+              <img src="VR Locomotion/broom-demo-poster.jpg" alt="Magic Broom VR locomotion demonstration beside the seated participant" loading="lazy" width="800" height="450" />
+            </span>
+            <span class="work__body">
+              <h2 class="work__title">Magic Broom VR Locomotion</h2>
+              <span class="work__meta">2026 &middot; Mixed Reality / HCI</span>
+              <p class="work__desc">An embodied broom-flying technique for VR, combining leaning and controller input with calibration, portal mechanics, and a small user evaluation.</p>
+            </span>
+            <span class="work__year" aria-hidden="true">&rsquo;26<span class="work__arrow">&nearr;</span></span>
+          </a>
+        </li>
+
+        <!-- 03 -->
+        <li class="work is-hidden" style="--i:2">
+          <a class="work__link" href="Paper Visualization/index.html">
+            <span class="work__thumb">
+              <img src="Paper Visualization/546653048-1ab09ee1-f453-43fa-9c39-141828956973.png" alt="Interactive co-citation network with paper recommendations and research-field hierarchy" loading="lazy" width="1892" height="886" />
+            </span>
+            <span class="work__body">
+              <h2 class="work__title">Co-Citation Visualization</h2>
+              <span class="work__meta">2025</span>
+              <p class="work__desc">An exploratory and interactive literature review system revealing shared foundations, topic bridges, citation flows, and which papers may be worth reading next.</p>
+            </span>
+            <span class="work__year" aria-hidden="true">&rsquo;25<span class="work__arrow">&nearr;</span></span>
+          </a>
+        </li>
+
+        <!-- 04 -->
+        <li class="work is-hidden" style="--i:3">
+          <a class="work__link" href="Aphasia/index.html">
+            <span class="work__thumb work__thumb--contain">
+              <img src="Aphasia/447314947-5bf6c34a-e2f3-4aad-94c4-6ced18934ef1.png" alt="Aphasia transcription demo showing waveform, raw transcript, and analyzed CHAT annotations" loading="lazy" width="1095" height="868" />
+            </span>
+            <span class="work__body">
+              <h2 class="work__title">Aphasia Transcription</h2>
+              <span class="work__meta">2024</span>
+              <p class="work__desc">An evaluation of speech-recognition systems for aphasic speech and the development of a practice tool for people with aphasia that highlights the errors they make.</p>
+            </span>
+            <span class="work__year" aria-hidden="true">&rsquo;24<span class="work__arrow">&nearr;</span></span>
+          </a>
+        </li>
+
+        <!-- 05 -->
+        <li class="work is-hidden" style="--i:4">
+          <a class="work__link" href="YuGiOh/index.html">
+            <span class="work__thumb">
+              <img src="YuGiOh/2.png" alt="Yu-Gi-Oh JavaFX duel board in play" loading="lazy" width="1267" height="707" />
+            </span>
+            <span class="work__body">
+              <h2 class="work__title">Yu-Gi-Oh</h2>
+              <span class="work__meta">2021</span>
+              <p class="work__desc">A client-server desktop card game built as a first-year bachelor project at Sharif University of Technology.</p>
+            </span>
+            <span class="work__year" aria-hidden="true">&rsquo;21<span class="work__arrow">&nearr;</span></span>
+          </a>
+        </li>
+
+        </ol>
+      </section>
+
+      <section class="tab-panel publications-panel" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications" data-tab-panel="publications" hidden>
+        <ol class="works publications-list">
+          <li class="work is-hidden" style="--i:0">
+            <a class="work__link" href="Digital Participatory Mapping/index.html">
+              <span class="work__thumb work__thumb--contain work__thumb--paper">
+                <img src="Digital Participatory Mapping/nordichi26adjunct-61-fig1.jpg" alt="Participatory mapping workshop setup with a projected tabletop map, and the four marker triggers" loading="eager" width="1121" height="696" />
+              </span>
+              <span class="work__body">
+                <h2 class="work__title">Toward Low-Barrier Participatory Mapping Workshops</h2>
+                <span class="work__meta">2026 &middot; NordiCHI &rsquo;26 Adjunct &middot; Tangible interaction</span>
+                <p class="work__desc">Marker-based cardboard tools that turn an ordinary table into a projected, interactive map, with four triggering mechanisms tested across three workshops.</p>
+              </span>
+              <span class="work__year" aria-hidden="true">&rsquo;26<span class="work__arrow">&nearr;</span></span>
+            </a>
+          </li>
+
+          <li class="work is-hidden" style="--i:1">
+            <a class="work__link" href="Graph-RAG/index.html">
+              <span class="work__thumb work__thumb--contain work__thumb--paper">
+                <img src="Graph-RAG/396803948-e0079fed-b36f-4817-831f-4a8ea2b2416b.png" alt="Graph-RAG workflow for indexing cross-reference documents and evaluating software requirements" loading="lazy" width="1872" height="1015" />
+              </span>
+              <span class="work__body">
+                <h2 class="work__title">Graph-RAG for Software Requirement Specfication</h2>
+                <span class="work__meta">2024 &middot; arXiv:2412.08593 &middot; cs.SE / cs.IR</span>
+                <p class="work__desc">A Graph-RAG and prompt-engineering framework for automated requirement traceability and compliance checks in Software Requirements Specifications.</p>
+              </span>
+              <span class="work__year" aria-hidden="true">&rsquo;24<span class="work__arrow">&nearr;</span></span>
+            </a>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <span data-index-label>Index — 05 projects</span>
+      <span>© <span data-year>2026</span></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
